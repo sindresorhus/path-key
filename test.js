@@ -1,10 +1,10 @@
 import test from 'ava';
-import fn from './';
+import m from './';
 
 test(t => {
-	t.is(fn().toUpperCase(), 'PATH');
-	t.is(fn({env: {PATH: ''}}), 'PATH');
-	t.is(fn({env: {Path: ''}, platform: 'win32'}), 'Path');
-	t.is(fn({env: {}, platform: 'darwin'}), 'PATH');
-	t.is(fn({env: {}, platform: 'win32'}), 'Path');
+	t.is(m().toUpperCase(), 'PATH');
+	t.is(m({env: {PATH: ''}}), 'PATH');
+	t.is(m({env: {Path: ''}, platform: 'win32'}), 'Path');
+	t.is(m({env: {}, platform: 'darwin'}), 'PATH');
+	t.is(m({env: {}, platform: 'win32'}), 'Path');
 });
