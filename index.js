@@ -9,5 +9,5 @@ module.exports = opts => {
 		return 'PATH';
 	}
 
-	return Object.keys(env).filter(x => x.toUpperCase() === 'PATH')[0] || 'Path';
+	return Object.keys(env).find(x => x.toUpperCase() === 'PATH') || 'Path';
 };
