@@ -1,6 +1,6 @@
 {
   "name": "path-key",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Get the PATH environment variable key cross-platform",
   "license": "MIT",
   "repository": "sindresorhus/path-key",
