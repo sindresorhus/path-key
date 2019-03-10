@@ -1,9 +1,10 @@
 'use strict';
-module.exports = opts => {
-	opts = opts || {};
 
-	const env = opts.env || process.env;
-	const platform = opts.platform || process.platform;
+const pathKey = options => {
+	options = options || {};
+
+	const env = options.env || process.env;
+	const platform = options.platform || process.platform;
 
 	if (platform !== 'win32') {
 		return 'PATH';
@@ -11,3 +12,6 @@ module.exports = opts => {
 
 	return Object.keys(env).find(x => x.toUpperCase() === 'PATH') || 'Path';
 };
+
+module.exports = pathKey;
+module.exports.default = pathKey;

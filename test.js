@@ -1,10 +1,10 @@
 import test from 'ava';
-import m from './';
+import pathKey from '.';
 
-test(t => {
-	t.is(m().toUpperCase(), 'PATH');
-	t.is(m({env: {PATH: ''}}), 'PATH');
-	t.is(m({env: {Path: ''}, platform: 'win32'}), 'Path');
-	t.is(m({env: {}, platform: 'darwin'}), 'PATH');
-	t.is(m({env: {}, platform: 'win32'}), 'Path');
+test('pathKey', t => {
+	t.is(pathKey().toUpperCase(), 'PATH');
+	t.is(pathKey({env: {PATH: ''}}), 'PATH');
+	t.is(pathKey({env: {Path: ''}, platform: 'win32'}), 'Path');
+	t.is(pathKey({env: {}, platform: 'darwin'}), 'PATH');
+	t.is(pathKey({env: {}, platform: 'win32'}), 'Path');
 });
