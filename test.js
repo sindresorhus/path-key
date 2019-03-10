@@ -1,7 +1,7 @@
 import test from 'ava';
 import pathKey from '.';
 
-test('pathKey', t => {
+test('main', t => {
 	t.is(pathKey().toUpperCase(), 'PATH');
 	t.is(pathKey({env: {PATH: ''}}), 'PATH');
 	t.is(pathKey({env: {Path: ''}, platform: 'win32'}), 'Path');
