@@ -1,5 +1,5 @@
-import {expectType} from 'tsd-check';
-import pathKey from '.';
+import {expectType} from 'tsd';
+import pathKey = require('.');
 
 expectType<string>(pathKey());
 expectType<string>(pathKey({env: {}}));

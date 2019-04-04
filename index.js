@@ -12,4 +12,5 @@ const pathKey = (options = {}) => {
 };
 
 module.exports = pathKey;
+// TODO: Remove this for the next major release
 module.exports.default = pathKey;
