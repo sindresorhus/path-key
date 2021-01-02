@@ -1,4 +1,4 @@
-# path-key [![Build Status](https://travis-ci.org/sindresorhus/path-key.svg?branch=master)](https://travis-ci.org/sindresorhus/path-key)
+# path-key
 
 > Get the [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) environment variable key cross-platform
 
