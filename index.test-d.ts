@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import pathKey = require('.');
+import pathKey from './index.js';
 
 expectType<string>(pathKey());
 expectType<string>(pathKey({env: {}}));

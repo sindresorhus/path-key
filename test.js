@@ -1,5 +1,5 @@
 import test from 'ava';
-import pathKey from '.';
+import pathKey from './index.js';
 
 test('main', t => {
 	t.is(pathKey().toUpperCase(), 'PATH');

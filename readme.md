@@ -2,8 +2,7 @@
 
 > Get the [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) environment variable key cross-platform
 
-It's usually `PATH`, but on Windows it can be any casing like `Path`...
-
+It's usually `PATH` but on Windows it can be any casing like `Path`...
 
 ## Install
 
@@ -11,11 +10,10 @@ It's usually `PATH`, but on Windows it can be any casing like `Path`...
 $ npm install path-key
 ```
 
-
 ## Usage
 
 ```js
-const pathKey = require('path-key');
+import pathKey from 'path-key';
 
 const key = pathKey();
 //=> 'PATH'
@@ -23,7 +21,6 @@ const key = pathKey();
 const PATH = process.env[key];
 //=> '/usr/local/bin:/usr/bin:/bin'
 ```
-
 
 ## API
 
@@ -35,18 +32,17 @@ Type: `object`
 
 ##### env
 
-Type: `object`<br>
+Type: `object`\
 Default: [`process.env`](https://nodejs.org/api/process.html#process_process_env)
 
 Use a custom environment variables object.
 
 #### platform
 
-Type: `string`<br>
+Type: `string`\
 Default: [`process.platform`](https://nodejs.org/api/process.html#process_process_platform)
 
 Get the PATH key for a specific platform.
-
 
 ---
 
