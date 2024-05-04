@@ -1,7 +1,9 @@
+import process from 'node:process';
+
 export default function pathKey(options = {}) {
 	const {
 		env = process.env,
-		platform = process.platform
+		platform = process.platform,
 	} = options;
 
 	if (platform !== 'win32') {
