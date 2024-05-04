@@ -1,4 +1,4 @@
-export interface Options {
+export type Options = {
 	/**
 	Use a custom environment variables object.
 
@@ -12,7 +12,7 @@ export interface Options {
 	Default: [`process.platform`](https://nodejs.org/api/process.html#process_process_platform).
 	*/
 	readonly platform?: NodeJS.Platform;
-}
+};
 
 /**
 Get the [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) environment variable key cross-platform.
