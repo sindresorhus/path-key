@@ -4,6 +4,14 @@
 
 It's usually `PATH` but on Windows it can be any casing like `Path`...
 
+## Why?
+
+While `process.env.PATH` reads correctly on Windows regardless of casing, you need the exact key when:
+
+- Passing environment to child processes
+- Working with custom environment objects (where case-insensitivity doesn't apply)
+- Using worker threads ([where case-insensitivity doesn't work](https://nodejs.org/api/process.html#processenv))
+
 ## Install
 
 ```sh
